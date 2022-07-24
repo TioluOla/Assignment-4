@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <p>Please fill this form out with the required information</p>
+    <form action="https://register-demo.freecodecamp.org">
+        <fieldset>
+            <br>
+            <label>
+                Enter Your First Name: 
+                <input type="text" name="firstname" required>
+            </label>
+            <br><br>
+            <label>
+                Enter Your Last Name: 
+                <input type="text" name="lastname" required>
+            </label>
+            <br><br>
+            <label>
+                Enter Your Email: 
+                <input type="text" name="email" required>
+            </label>
+            <br><br>
+            <label>
+                Create Your Password: 
+                <input type="password" name="pword" required pattern="[a-z0-5]{8,}"> 
+            </label>
+        </fieldset>
+        <fieldset>
+            <br>
+            <label>
+                Personal Account
+                <input type="radio" name="account-type">
+            </label>
+            <br><br>
+            <label>
+                Business Account
+                <input type="radio" name="account-type">
+            </label>
+            <br><br>
+            <label>
+                <input type="checkbox" name="terms-conditions" required>
+                I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            </label>
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <br>
+            <label>
+                Upload a profile picture
+                <input type="file" name="file-upload">
+            </label>
+            <br><br>
+            <label>
+                Input your age (years)
+                <input type="number" name="age" min="14" max="120">
+            </label>
+            <br><br>
+            <label>
+                How did you hear about us?
+                <select name="dropdown">
+                    <option value>(Select one)</option>
+                    <option value="1">Freecodecamp News</option>
+                    <option value="2">Freecodecamp Youtube Channel</option>
+                    <option value="3">Freecodecamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <br><br>
+            <label>
+                Provide a bio
+                <textarea rows="4" cols="40" placeholder="I like coding on the beach"></textarea>
+            </label>
+        </fieldset>
+        <br>
+        <input type="submit" value="submit">
+
+    </form>   
+</body>
+</html>
